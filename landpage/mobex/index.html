@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <!--indica, ocupacion de caractxeres utf,
+        todos los caracteres de todos 
+        los idiomas que existen-->
+        <meta charset="utf-8"> 
+        
+        <title>MOBEX | Developing</title>
+            <!--link sirve para agregar "normalize.css"
+             para que todos los elementos se vean lo mas similar posible en todos los navegadores, ya que firefox
+             chrome y otros navegadores pueden mostrar diferentes los elementos creados   -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!--estilo de letra importado de fonts, debe estar despues y antes del codigo a ocupar, 
+            porque el codigo main.css buscara la fuente y si no la encuentra-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Mukta|Days+One" rel="stylesheet">
+        <!--llamando a main.css capa de estilos de la pagina-->
+        <link rel="stylesheet" href="css/main.css">
+        <!--favicon-->
+        <link rel="shortcut icon" href="img/mecopia.jpg">
+        <!--style es para agregar css, -->
+        <!--<style>
+            /*selector de etiquetas, porque literal se coloca
+            el nombre de la etiqueta a */
+            body{
+               
+                background-color: rgb(255, 239, 19);
+            }  
+            h1{
+                color: gray;
+
+            }
+            /*seleccion dentro de la etiqueta nav a todos los links
+            (a) la etiqueta (a)*/
+            nav a {
+                color: black;
+                background-color: rgb(255, 239, 19);
+
+
+            }
+        </style>-->
+    </head>
+    <body >
+        <!--etiqueta header que sirve para contener todos 
+            los elementos que vayan en la parte superior    de la pagina, como 
+        menu, titulo o elementos principales que aparecen arriba(encabezado) -->
+        <header>
+                
+            <a href="index.html" id="logo" >
+                <img src="img/logo_mobexpng.png" width="400 " height="110"  alt="mostrando logo de la empresa " >
+            </a>
+                <!--barra de navegacion-->
+            <nav>
+                <!--UL: lista no ordenada UNORDER LIST
+                    li: list items-->
+                <ul>
+                    <!--elementos de la lista--->
+                    <li><h1><a href="index.html" class="selected">MOBEX</a></li></h1>
+                    <li><h2><a href="acerca.html" >Acerca de</a></li></h2>
+                    <li><h2><a href="contacto.html">Contacto</a></li></h2>
+                </ul>
+            </nav>
+        </header>
+
+        <!--contenedores genericos,añadir un id para luego añadir un estilo -->
+        <div id="wrapper">
+            <!--section representa la seccion principal de la pagina
+            identar mover a la derecha -->
+            <section>
+                <article>  
+                     <h2></h2>
+                        
+                </article>
+                <UL id="galeria">
+                    <!--alt sirve para, indicar informacion adicional sobre la foto, 
+                    util para dispositivos que ayudan a las personas con discapacidades visuales, 
+                    para ayudar a escuchar el contenido o significado de esa imagen-->
+                    <li>
+                        <a href="img/M.E/M.E.jpg">
+                            <img src="img/M.E/M.E.jpg"  alt="Bodega de mobiliario express">
+                            <p>Bodega Mobex</p>
+                        </a>
+                    </li>
+                    <li>
+                            <a href="img/M.E/Almacenamiento Tableros Aglomerados.jpg">
+                                <img src="img/M.E/Almacenamiento Tableros Aglomerados.jpg"  alt="logodedesarrollo ">
+                                <p>Proyecto MOBEX </p>
+                            </a>
+                        </li>
+                    <li>
+                        <a href="img/M.E/MAPA MOBEX.jpg">
+                            <img src="img/M.E/MAPA MOBEX.jpg"  alt="mostrando workflow de la empresa ">
+                            <p>Flujo de trabajo</p>
+                        </a>
+                    </li>
+                    
+                </UL>
+            </section>
+        </div>  
+    
+        <!--la seccion que va al final de la pagina, contiene links relevantes 
+        a redes sociales, u otros trabajos relacionados con el sitio, copyright y demas  -->
+        <footer>
+            <p>&copy; 2018 slowride | Mobiliario Express</p>
+        </footer>
+
+    </body>
+</html>
